@@ -1,10 +1,163 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Jayson's Portfolio</title>
+    <meta charset="utf-8" />
+    <title>Jayson Harper's Portfolio</title>
+    <link href="./profile.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Jayson Harper's Portfolio</h1>
-    <img src=".\profileLarge.jpg" alt="Me" style="width:400px;height:500px;"/>
-    <h4>test</h4>
+    <div class="jumbotron text-center">
+      <h1>Jayson Harper</h1>
+      <h5>[ Software Developer ]</h5>
+      <p><q>Quality is not an act, it is a habit.</q> <i>Aristotle</i></p>
+    </div>
+
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          Profile
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="projects-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#projects-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="projects-tab-pane"
+          aria-selected="false"
+        >
+          Projects
+        </button>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="tab-content" id="myTabContent">
+        <!-- Profile Tab -->
+        <div
+          class="tab-pane fade show active"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <img
+                  src="./profileLarge.jpg"
+                  class="card-img-top mx-auto"
+                  id="profileImg"
+                  alt="Profile Picture"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hello there!</h5>
+                  <p class="card-text">
+                    I am a software developer with 5+ years of experience in
+                    design, development, testing and maintenance. I am
+                    proficient working on Windows desktop client-server
+                    applications as well as data-driven web sites utilizing the
+                    Microsoft technology stack. I am excited to leverage my
+                    skills and experience to solve meaningful problems on a
+                    dynamic software team.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Contact</h5>
+                  <p class="card-text">
+                    ✉ jaysonharper@gmail.com <br />
+                    � Beaverton, OR 97008
+                  </p>
+                  <a
+                    href="https://github.com/jaysonharper"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/jaysonchristianharper/"
+                    class="btn btn-primary"
+                    >LinkedIn</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Tab -->
+        <div
+          class="tab-pane fade"
+          id="projects-tab-pane"
+          role="tabpanel"
+          aria-labelledby="projects-tab"
+          tabindex="0"
+        >
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">PacMen Exercise</h5>
+                  <p class="card-text">
+                    Creates pacman images and sets them in motion with edge detection.
+                  </p>
+                  <a href="https://jaysonharper.github.io/pacmen-exercise/" class="btn btn-primary">View Details</a>
+                  <a href="https://github.com/jaysonharper/pacmen-exercise" class="btn btn-primary">View Repository</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Eye Exercise</h5>
+                  <p class="card-text">
+                    Creates eye images that follow the location of the mouse.
+                  </p>
+                  <a href="https://jaysonharper.github.io/eye-exercise/" class="btn btn-primary">View Details</a>
+                  <a href="https://github.com/jaysonharper/eye-exercise" class="btn btn-primary">View Repository</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Real Time Bus Tracker</h5>
+                  <p class="card-text">
+                    Uses a map API to track metro buses in real time.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Details</a>
+                  <a href="#" class="btn btn-primary">View Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
